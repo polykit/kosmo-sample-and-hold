@@ -5,9 +5,9 @@
     {
       "Vendor":      "KiCad",
       "Application": "Pcbnew",
-      "Version":     "5.1.9-73d0e3b20d~88~ubuntu20.10.1"
+      "Version":     "5.1.10-88a1d61d58~90~ubuntu21.04.1"
     },
-    "CreationDate":  "2021-03-12T20:59:03+01:00"
+    "CreationDate":  "2021-10-26T22:35:56+02:00"
   },
   "GeneralSpecs":
   {
@@ -15,7 +15,7 @@
     {
       "Name": "kosmo-sample-and-hold",
       "GUID": "6b6f736d-6f2d-4736-916d-706c652d616e",
-      "Revision": "v1.0.0"
+      "Revision": "v1.0.1"
     },
     "Size":
     {

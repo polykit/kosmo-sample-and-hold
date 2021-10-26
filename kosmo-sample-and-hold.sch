@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Kosmo Sample&Hold / Noise"
 Date "2021-02-27"
-Rev "v1.0.0"
+Rev "v1.0.1"
 Comp "Jan Knipper"
 Comment1 "github.com/polykit"
 Comment2 ""
@@ -407,17 +407,6 @@ Connection ~ 6050 4350
 Text Notes 5950 5900 0    50   ~ 0
 * use film capacitor for better results
 $Comp
-L Transistor_BJT:2N3904 Q2
-U 1 1 6167A511
-P 5550 2050
-F 0 "Q2" H 5740 2004 50  0000 L CNN
-F 1 "2N3904" H 5740 2095 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5750 1975 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5550 2050 50  0001 L CNN
-	1    5550 2050
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R R7
 U 1 1 61684FDD
 P 5000 1450
@@ -520,7 +509,7 @@ L Device:R R12
 U 1 1 616BF5E1
 P 6950 2250
 F 0 "R12" V 6743 2250 50  0000 C CNN
-F 1 "4M7" V 6834 2250 50  0000 C CNN
+F 1 "100k" V 6834 2250 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6880 2250 50  0001 C CNN
 F 3 "~" H 6950 2250 50  0001 C CNN
 	1    6950 2250
@@ -861,27 +850,20 @@ Wire Wire Line
 Connection ~ 9750 5500
 Wire Wire Line
 	9750 5500 9750 5550
-$Comp
-L Device:R_POT GAIN1
-U 1 1 6190BE36
-P 6600 2900
-F 0 "GAIN1" H 6531 2946 50  0000 R CNN
-F 1 "50k" H 6531 2855 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_ACP_CA9-H5_Horizontal" H 6600 2900 50  0001 C CNN
-F 3 "~" H 6600 2900 50  0001 C CNN
-	1    6600 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 2900 6750 3050
-Wire Wire Line
-	6750 3050 6600 3050
-Wire Wire Line
-	6600 3050 6600 3150
-Connection ~ 6600 3050
-Wire Wire Line
-	6600 2750 6600 2650
 Connection ~ 6300 1750
 Wire Wire Line
 	6300 1750 6650 1750
+$Comp
+L Transistor_BJT:BC547 Q2
+U 1 1 6178B4C7
+P 5550 2050
+F 0 "Q2" H 5741 2004 50  0000 L CNN
+F 1 "BC547" H 5741 2095 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5750 1975 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 5550 2050 50  0001 L CNN
+	1    5550 2050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6600 2650 6600 3150
 $EndSCHEMATC
